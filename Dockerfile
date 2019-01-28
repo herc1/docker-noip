@@ -6,7 +6,7 @@ RUN apt-get -y update
 
 RUN apt-get -y upgrade
 
-RUN apt-get -y install build-essential wget tar
+RUN apt-get -y install build-essential wget tar iproute2
 
 RUN cd /usr/local/src/ && wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
 
