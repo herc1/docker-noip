@@ -1,4 +1,4 @@
-#!/bin/bassh
+#!/bin/bash
 
 while true; do
  if [ $(pgrep $service | wc -l) -eq 0 ]
