@@ -12,6 +12,8 @@ RUN cd /usr/local/src/ && wget http://www.no-ip.com/client/linux/noip-duc-linux.
 
 RUN cd /usr/local/src/ && tar xf noip-duc-linux.tar.gz
 
-RUN cd /usr/local/src/noip-*/ && make install
+RUN cd /usr/local/src/noip-*/ && make
+
+RUN cp /usr/local/src/noip-*/noip2 /usr/bin
 
 ENTRYPOINT ["/usr/bin/noip2"]
