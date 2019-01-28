@@ -16,4 +16,6 @@ RUN cd /usr/local/src/noip-*/ && make
 
 RUN cp /usr/local/src/noip-*/noip2 /usr/bin
 
-ENTRYPOINT ["/usr/bin/noip2"]
+COPY entrypoint.sh /
+
+ENTRYPOINT ["/entrypoint.sh"]
